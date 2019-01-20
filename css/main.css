@@ -1,0 +1,119 @@
+html, body, header, .img-container
+{
+    font-family: Verdana, sans-serif;
+    height: 100%;
+}
+.img-container
+{
+    background: url(../images/tlo.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color:white;
+}
+
+.todays-ice-cream img
+{
+    border-radius: 10px;
+}
+@media (max-width: 767.98px)
+{
+    .todays-ice-cream img
+    {
+        height: 150px;
+        width: 150px;
+    }
+    .prices-background
+    {
+        margin-left: 50%;
+        top: 20%;
+        width: 80%;
+        height: auto;
+        right: 10%;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .todays-ice-cream img
+    {
+        height: 200px;
+        width: 200px;
+    }
+    .prices-background
+    {
+        margin-left: 50%;
+        top: 40%;
+        right: 35%;
+        width: 35%;
+        height: auto;
+    }
+}
+blockquote
+{
+    margin: 20px;
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+    color: black;
+    background-color: #e6ee9c;
+    border-radius: 20px;
+}
+blockquote:before
+{
+    font-family: Forte sans-serif;
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -25px;
+    top: -20px;
+}
+blockquote:after
+{
+    font-family: Forte sans-serif;
+    display: block;
+    padding-left: 10px;
+    content: "\201D";
+    font-size: 80px;
+    position: absolute;
+    right: -10px;
+    bottom: -70px;
+}
+.button-prices
+{
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    bottom: 60px;
+    position: fixed;
+    z-index: 999;
+}
+.prices-background
+{
+    border-radius: 20px;
+    background-size: cover;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background: rgb(38, 222, 255);
+    border: 3px black solid;
+}
+.prices-background::before
+{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 10px;
+    content: "❌";
+    font-size: 20px;
+}
+.card-height
+{
+    min-height: 445px;
+}
+.card-opinions
+{
+    background: rgb(38, 110, 255);
+}
